@@ -1,0 +1,20 @@
+name: chickmater
+subcommands:
+    - new:
+        about: Create a new profile.
+    - ls:
+        about: List all existing user profiles.
+    - rm:
+        about: Delete a user profile.
+        args:
+            - username:
+                help: User to delete
+                takes_value: true
+                required: true
+    - fetch:
+        about: Get games for a use.
+        args:
+            - username:
+                help: User to get games for.
+                takes_value: true
+                required: true
